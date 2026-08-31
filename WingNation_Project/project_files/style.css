@@ -1,0 +1,473 @@
+/*HOME PAGE */
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/*header*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 60px;
+	background-color: rgb(110,6,6);
+	color: white;
+}
+
+.logo img{
+	height: 120px;
+}
+
+nav {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: rgb(173,135,79);
+}
+
+
+.sub-nav {
+    display: flex;
+	margin-top: 5px;
+	margin-left: 0;
+	gap: 20px;
+}
+
+.sub-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-nav a:hover {
+    color: rgb(173,135,79);
+}
+
+
+
+/* order button style */
+.order-btn {
+	background-color: rgb(173,135,79);
+	color: black;
+	padding: 8px 15px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.order-btn:hover {
+	background-color: white;
+}
+
+/* for the text before the top 3*/
+.intro {
+	padding: 40px 60px;
+	text-align: center;
+	background-color: white;
+	color: rgb(110,6,6);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro p {
+	color: black;
+}
+
+/* top 3 wings section */
+.top-wings {
+	text-align: center;
+	padding: 10px 40px;
+	background-color: white;
+	color: rgb(70,0,0);
+}
+
+.top-wings h2 {
+	font-size: 28px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	color: rgb(110,6,6);
+}
+
+.wings-gallery {
+	display: flex;
+	justify-content: center;
+	gap: 120px;
+	flex-wrap: wrap;
+}
+
+.wing-item {
+	width: 250px;
+	text-align: center;
+}
+
+.wing-item img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wing-item img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.wing-item p {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgb(110,6,6);
+}
+
+
+/* LOCATIONS PAGE */
+.locations-page {
+	background-color: white;
+	padding: 20px 20px;
+	min-height: 80vh;
+	text-align: center;
+}
+
+.locations-page h1 {
+	color: rgb(110,6,6);
+	font-size: 32px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 60px; 
+    max-width: 1100px;
+    margin: auto;
+  }
+
+th h2{
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: rgb(110,6,6);
+  }
+
+td {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #555;
+  }
+
+strong {
+    color: rgb(110,6,6);
+  }
+
+  
+.label {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  
+/* FOOTER */
+footer {
+    background-color: rgb(110, 6, 6);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 60px; /* space above footer */
+}
+
+.footer-links,
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-links a,
+.footer-bottom-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.footer-links a:hover,
+.footer-bottom-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.social-icons i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+/* REVIEWS SECTION */
+.reviews {
+  background-color: white;
+  color: rgb(110, 6, 6);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.reviews h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.review-container {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.review-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: rgb(250, 250, 250);
+  border: 2px solid rgb(173, 135, 79);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+  font-size: 18px;
+  font-style: italic;
+  color: black;
+}
+
+.review h4 {
+  margin-top: 15px;
+  color: rgb(110, 6, 6);
+}
+
+
+.arrow {
+  background-color: rgb(173, 135, 79);
+  color: white;
+  border: none;
+  font-size: 22px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.arrow:hover {
+  background-color: rgb(110, 6, 6);
+  transform: scale(1.1);
+}
+
+.arrow.left {
+  margin-right: 20px;
+}
+
+.arrow.right {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+}
+
+
+/* MAP SECTION */
+.map-section {
+	text-align: center;
+	padding: 20px 20px;
+	background-color: #fff;
+	color: rgb(110,6,6);
+}
+
+.map-section h2 {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.map-section p {
+	color: #555;
+	margin-bottom: 20px;
+}
+
+.map-box {
+	display: flex;
+	justify-content: center;
+}
+
+.map-box iframe {
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+	width: 80%;
+	max-width: 800px;
+	height: 400px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+	background-color: rgb(250,250,250);
+	text-align: center;
+	padding: 60px 20px;
+}
+
+.newsletter input {
+	padding: 10px;
+	width: 250px;
+	border: 2px solid rgb(173,135,79);
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.newsletter h2 {
+	color: rgb(110,6,6);
+}
+
+.newsletter button {
+	background-color: rgb(173,135,79);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.newsletter button:hover {
+	background-color: rgb(110,6,6);
+}
+
+/* HAMBURGER MENU */
+/* Hamburger menu wrapper */
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px; 
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger lines */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: background 0.3s ease;
+}
+
+.hamburger:hover span {
+    background-color: rgb(173,135,79); 
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-links {
+    display: none;
+    position: absolute;
+    top: 35px; 
+    right: 0;
+    background-color: rgb(110,6,6);
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 5px;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* Show dropdown when checkbox checked */
+#menu-toggle:checked + .hamburger + .dropdown-links {
+    display: flex;
+}
+
+/* Dropdown links style */
+.dropdown-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.dropdown-links a:hover {
+    color: rgb(173,135,79);
+}
+
+
+
+           
+       
+	   
+	   

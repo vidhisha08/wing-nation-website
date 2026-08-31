@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-ie">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, intital-scale=1.0">
+	<title>WingNation</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="resources/icon.png">
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header>
+    <div class="logo">
+        <img src="resources/logo.png" alt="WingNation Logo">
+    </div>
+
+    <nav>
+		<a href="#" class="order-btn">ORDER</a>
+        <!-- Hamburger menu for additional links -->
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="dropdown-links">
+                <a href="home.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="locations.html">LOCATIONS</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="reviews.php">REVIEWS</a>
+                <a href="add_review.php">ADD REVIEW</a>
+            </div>
+        </div>
+    </nav>
+</header>
+	<!-- END OF HEADER -->
+	
+	<!-- welcome message -->
+	<section class="intro">
+		<h1>Welcome to WingNation</h1>
+		<p>Heat You Can't Beat - Discover Our Top Wings and Flavours!</p>
+	</section>
+	
+	<section class="top-wings">
+		<h2>OUR TOP 3 WINGS</h2>
+		<div class="wings-gallery">
+			<div class="wing-item">
+				<img src="resources/wing1.jpg" alt="top wing 1">
+				<p>Buffalo Blaze</p>
+			</div>
+			<div class="wing-item">
+				<img src="resources/wing2.jpg" alt="top-wing 2">
+				<p>Garlic Inferno</p>
+			</div>
+			<div class="wing-item">
+				<img src="resources/wing3.jpg" alt="top-wing 3">
+				<p>Sweet 'n Spicy</p>
+			</div>
+		</div>
+	</section>
+	
+<!-- REVIEWS SECTION -->
+	<section class="reviews">
+	<h2>Hear From Our Customers!</h2>
+
+	<div class="review-container">
+		<div class="arrow left">&#10094;</div>
+
+			<div class="review-box">
+			<div class="review-slider">
+			<div class="review">
+				<p>⭐⭐⭐⭐⭐</p>
+				<p>"Best wings in Ireland! The Buffalo Blaze is unmatched🔥."</p>
+				<h4>- Sarah, Cork</h4>
+			</div>
+			<div class="review">
+				<p>⭐⭐⭐⭐</p>
+				<p>"Absolutely loved the Honey BBQ! Great service and fast delivery."</p>
+					<h4>- Henry, Limerick</h4>
+			</div>
+			<div class="review">
+				<p>⭐⭐⭐⭐⭐</p>
+				<p>"WingNation never disappoints - perfect for any game nights!✨"</p>
+				<h4>- John, Limerick</h4>
+			</div>
+      </div>
+    </div>
+    <div class="arrow right">&#10095;</div>
+  </div>
+</section>
+
+
+<!-- MAP SECTION -->
+	<section class="map-section">
+	<h2>Find Your Nearest WingNation!</h2>
+	<p>Enter your location below to find the closest branch.</p>
+	
+	<div class="map-box">
+		<iframe	
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122713.54254668943!2d-8.6399941!3d52.6612522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485c8b2e04e6dfab%3A0x2600c7a819b46d0!2sLimerick%2C%20Ireland!5e0!3m2!1sen!"
+			width="600"
+			height="450"
+			style="border:0"
+			allowfullscreen=""
+			loading="lazy">
+		</iframe>
+	</div>
+	</section>
+
+<!-- NEWSLETTER -->
+	<section class="newsletter">
+	<h2>Join the WingNation Club!</h2>
+	<p>Get exclusive deals and updates on our latest flavours 😊</p>
+	<form>
+		<input type="email" placeholder="Enter your email" required>
+		<button type="submit">Subscribe!</button>
+	</form>
+	</section>
+	
+<!-- FOOTER -->
+<footer>
+      <div class="footer-links">
+        <a href="#">ABOUT</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="contact.html">FEEDBACK</a>
+      </div>
+
+      <div class="footer-bottom-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Allergen Info</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div class="social-icons">
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-spotify"></i>
+      </div>
+
+      <div class="copyright">
+        © WingNation 2025. All rights reserved.
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- END OF FOOTER -->
+
+
+	<script>
+	  const slider = document.querySelector('.review-slider');
+	  const reviews = document.querySelectorAll('.review');
+	  const prevBtn = document.querySelector('.arrow.left');
+	  const nextBtn = document.querySelector('.arrow.right');
+
+	  let index = 0;
+
+	  function showReview(n) {
+		index = (n + reviews.length) % reviews.length;
+		slider.style.transform = `translateX(-${index * 100}%)`;
+	  }
+
+	  prevBtn.addEventListener('click', () => showReview(index - 1));
+	  nextBtn.addEventListener('click', () => showReview(index + 1));
+	</script>
+</body>
+</html>

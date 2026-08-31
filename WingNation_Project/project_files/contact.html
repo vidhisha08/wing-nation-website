@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, intital-scale=1.0">
+	<title>WingNation | Contact Us</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="resources/icon.png">
+	<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: white;
+			color: rgb(110,6,6);
+			text-align: center;
+		}	
+        .button {
+            background-color: rgb(173,135,79);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: rgb(173,135,79);
+        }
+
+        /* Hide form until the button is clicked */
+        #feedback-form {
+            display: none;
+            margin-top: 60px;
+        }
+
+        textarea {
+            width: 80%;
+            height: 150px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: rgb(173,135,79);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(173,135,79);
+        }
+    </style>
+</head>
+<body>
+<!-- HEADER -->
+	<header>
+    <div class="logo">
+        <img src="resources/logo.png" alt="WingNation Logo">
+    </div>
+
+    <nav>
+		<a href="#" class="order-btn">ORDER</a>
+        <!-- Hamburger menu for additional links -->
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="dropdown-links">
+                <a href="home.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="locations.html">LOCATIONS</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="reviews.php">REVIEWS</a>
+                <a href="add_review.php">ADD REVIEW</a>
+            </div>
+        </div>
+    </nav>
+</header>
+	<!-- END OF HEADER -->
+
+    <h1>CONTACT US</h1>
+
+    <p>
+        At Wing Nation, we are always striving to improve our guests’ dining experience. 
+        We'd love to hear your suggestions. If your comment or question involves a particular 
+        restaurant, please include as much information as possible about that location. 
+        To provide your feedback, contact us by clicking the button below.
+    </p>
+
+    <h3>PRESS & MEDIA ENQUIRIES</h3>
+    <p>
+        For corporate media enquiries, please contact FTI Consulting: 
+        <a href="mailto:wingnationpressoffice@fticonsulting.com">
+            wingnationpressoffice@fticonsulting.com
+        </a>
+    </p>
+
+    <!-- Contact Us Button -->
+    <div class="button" onclick="showForm()">CONTACT US</div>
+
+    <!-- Simple Feedback Form -->
+    <div id="feedback-form">
+        <h2>Please Provide Us With Feedback</h2>
+        <form>
+            <textarea placeholder="Type your feedback here..."></textarea><br>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+
+    <script>
+        function showForm() {
+            document.getElementById("feedback-form").style.display = "block";
+            document.getElementById("feedback-form").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+	
+	<!-- FOOTER -->
+	<footer>
+      <div class="footer-links">
+        <a href="#">ABOUT</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="contact.html">FEEDBACK</a>
+      </div>
+
+      <div class="footer-bottom-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Allergen Info</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div class="social-icons">
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-spotify"></i>
+      </div>
+
+      <div class="copyright">
+        © WingNation 2025. All rights reserved.
+      </div>
+    </footer>
+
+</body>
+</html>
